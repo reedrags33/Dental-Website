@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ragsdale Family Dentistry — Coppell, TX</title>
+<meta name="description" content="Family dentistry in Coppell, Texas. Unhurried visits, straight answers, and continuity of care from Dr. Reed Ragsdale and Dr. Peter Lecca.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header style="position:sticky;top:0;z-index:50;background:rgba(243,242,242,0.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--color-divider);padding:20px 0;">
+  <nav class="site-nav" style="max-width:1120px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:56px;">
+    <div class="brand" style="font-family:var(--font-heading);font-size:18px;font-weight:600;display:flex;align-items:center;gap:12px;">
+      <a href="#contactSection" onclick="goToPhone(); return false;" aria-label="Call us — (972) 304-0968" title="Call us — (972) 304-0968" style="display:flex;align-items:center;justify-content:center;width:38px;height:38px;min-width:38px;border:1px solid var(--color-accent);border-radius:50%;text-decoration:none;cursor:pointer;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+      </a>
+      Ragsdale Family Dentistry
+    </div>
+    <button class="nav-toggle" onclick="toggleMobileNav()" aria-label="Toggle menu">☰</button>
+    <div class="nav-links" style="display:flex;gap:28px;font-size:14px;color:var(--color-text);">
+      <a onclick="setCurrentPage('home'); document.querySelector('.nav-links').classList.remove('open'); return false;" href="#" style="color:var(--color-text);text-decoration:none;cursor:pointer;">Home</a>
+      <a onclick="setCurrentPage('services'); document.querySelector('.nav-links').classList.remove('open'); return false;" href="#" style="color:var(--color-text);text-decoration:none;cursor:pointer;">Services</a>
+      <a onclick="setCurrentPage('doctors'); document.querySelector('.nav-links').classList.remove('open'); return false;" href="#" style="color:var(--color-text);text-decoration:none;cursor:pointer;">Our Doctors</a>
+      <a onclick="setCurrentPage('home'); document.querySelector('.nav-links').classList.remove('open'); setTimeout(() => {document.getElementById('reviews')?.scrollIntoView({behavior:'smooth'});}, 100); return false;" href="#" style="color:var(--color-text);text-decoration:none;cursor:pointer;">Reviews</a>
+      <a onclick="setCurrentPage('home'); document.querySelector('.nav-links').classList.remove('open'); setTimeout(() => {document.getElementById('contactSection')?.scrollIntoView({behavior:'smooth'});}, 100); return false;" href="#" style="color:var(--color-text);text-decoration:none;cursor:pointer;">Contact</a>
+    </div>
+    <button class="book-visit-btn" onclick="setCurrentPage('home'); setTimeout(() => {document.getElementById('contactSection')?.scrollIntoView({behavior:'smooth'});}, 100);" style="font-family:var(--font-body);padding:10px 20px;border:1px solid var(--color-accent);background:transparent;color:var(--color-accent);font-size:14px;border-radius:var(--radius-md);cursor:pointer;">Book a visit</button>
+  </nav>
+</header>
+
+<div id="pageHome" style="display:block;">
+<main style="flex:1;display:flex;flex-direction:column;">
+  <section style="padding:60px 0;border-bottom:1px solid var(--color-divider);">
+    <div style="max-width:1120px;margin:0 auto;padding:0 32px;">
+      <div class="hero-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;">
+        <div>
+          <p style="font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-accent);font-weight:600;margin:0 0 16px;font-family:var(--font-body);">Coppell, Texas</p>
+          <h1 style="font-family:var(--font-heading);font-size:44px;font-weight:400;line-height:1.15;margin:0 0 20px;">Healthy smiles, unhurried visits, no surprises.</h1>
+          <p style="font-family:var(--font-body);font-size:16px;color:var(--color-neutral-600);margin:0 0 32px;line-height:1.6;">Whether you've trusted this office for years or you're new to Coppell, you'll get a clear plan, straight answers, and a team that keeps your care moving forward.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;">
+            <button onclick="document.getElementById('contactSection')?.scrollIntoView({behavior:'smooth'});" style="font-family:var(--font-body);padding:10px 20px;border:1px solid var(--color-accent);background:transparent;color:var(--color-accent);font-size:14px;border-radius:var(--radius-md);cursor:pointer;">Request an appointment</button>
+            <button onclick="setCurrentPage('doctors');" style="font-family:var(--font-body);padding:10px 20px;border:1px solid var(--color-divider);background:transparent;color:var(--color-text);font-size:14px;border-radius:var(--radius-md);cursor:pointer;">Returning patient? Start here</button>
+          </div>
+        </div>
+        <figure class="plate hero-figure">
+          <img src="uploads/IMG_0341.jpeg" alt="Dental office environment">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:80px 0;border-bottom:1px solid var(--color-divider);">
+    <div style="max-width:1120px;margin:0 auto;padding:0 32px;">
+      <p style="font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-accent);font-weight:600;margin:0 0 8px;font-family:var(--font-body);">Why patients stay</p>
+      <h2 style="font-family:var(--font-heading);font-size:32px;font-weight:400;margin:0 0 48px;">Care that feels less like an appointment.</h2>
+      <div class="features-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:40px;">
+        <div>
+          <p style="font-family:var(--font-body);font-size:13px;color:var(--color-accent);margin:0 0 12px;font-weight:600;">01</p>
+          <h3 style="font-family:var(--font-heading);font-size:18px;font-weight:400;margin:0 0 8px;">Unhurried visits</h3>
+          <p style="font-family:var(--font-body);font-size:14px;color:var(--color-neutral-600);margin:0;line-height:1.55;">Enough time in the chair to ask your questions.</p>
+        </div>
+        <div>
+          <p style="font-family:var(--font-body);font-size:13px;color:var(--color-accent);margin:0 0 12px;font-weight:600;">02</p>
+          <h3 style="font-family:var(--font-heading);font-size:18px;font-weight:400;margin:0 0 8px;">Straight answers</h3>
+          <p style="font-family:var(--font-body);font-size:14px;color:var(--color-neutral-600);margin:0;line-height:1.55;">Clear treatment plans, explained before anything is scheduled.</p>
+        </div>
+        <div>
+          <p style="font-family:var(--font-body);font-size:13px;color:var(--color-accent);margin:0 0 12px;font-weight:600;">03</p>
+          <h3 style="font-family:var(--font-heading);font-size:18px;font-weight:400;margin:0 0 8px;">Continuity of care</h3>
+          <p style="font-family:var(--font-body);font-size:14px;color:var(--color-neutral-600);margin:0;line-height:1.55;">Your history and records carried forward from day one.</p>
+        </div>
+        <div>
+          <p style="font-family:var(--font-body);font-size:13px;color:var(--color-accent);margin:0 0 12px;font-weight:600;">04</p>
+          <h3 style="font-family:var(--font-heading);font-size:18px;font-weight:400;margin:0 0 8px;">Comfort-first options</h3>
+          <p style="font-family:var(--font-body);font-size:14px;color:var(--color-neutral-600);margin:0;line-height:1.55;">Nitrous oxide and calm environment for patients.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:80px 0;border-bottom:1px solid var(--color-divider);">
+    <div style="max-width:1120px;margin:0 auto;padding:0 32px;">
+      <div style="max-width:640px;margin:0 auto;text-align:center;">
+        <p style="font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-accent);font-weight:600;margin:0 0 8px;font-family:var(--font-body);">Meet the team</p>
+        <h2 style="font-family:var(--font-heading);font-size:28px;font-weight:400;margin:0 0 16px;">Two doctors, one trusted practice.</h2>
+        <p style="font-family:var(--font-body);font-size:15px;color:var(--color-neutral-600);margin:0 0 20px;line-height:1.6;text-wrap:pretty;">Dr. Peter Lecca has cared for Coppell families for 30+ years. Dr. Reed Ragsdale continues that standard of care with the same attention and approach.</p>
+        <a onclick="setCurrentPage('doctors'); return false;" href="#" style="color:var(--color-accent);font-family:var(--font-body);font-size:14px;font-weight:600;text-decoration:none;border-bottom:1px solid var(--color-accent);">Meet our doctors →</a>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:80px 0;border-bottom:1px solid var(--color-divider);">
+    <div style="max-width:1120px;margin:0 auto;padding:0 32px;">
+      <p style="font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-accent);font-weight:600;margin:0 0 8px;font-family:var(--font-body);">Explore our care</p>
+      <h2 style="font-family:var(--font-heading);font-size:28px;font-weight:400;margin:0 0 32px;">Full range of family dentistry.</h2>
+      <div class="cards-grid-3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:20px;">
+        <div style="border:1px solid var(--color-divider);border-radius:var(--radius-md);padding:20px;">
+          <p style="font-family:var(--font-body);font-size:13px;color:var(--color-accent);margin:0 0 8px;font-weight:600;">Cleanings &amp; preventive</p>
+          <p style="font-family:var(--font-body);font-size:14px;color:var(--color-neutral-600);margin:0;line-height:1.55;">Routine care to catch small issues before they grow.</p>
+        </div>
+        <div style="border:1px solid var(--color-divider);border-radius:var(--radius-md);padding:20px;">
+          <p style="font-family:var(--font-body);font-size:13px;color:var(--color-accent);margin:0 0 8px;font-weight:600;">TMJ &amp; facial pain</p>
+          <p style="font-family:var(--font-body);font-size:14px;color:var(--color-neutral-600);margin:0;line-height:1.55;">Years of experience diagnosing and treating jaw pain.</p>
+        </div>
+        <div style="border:1px solid var(--color-divider);border-radius:var(--radius-md);padding:20px;">
+          <p style="font-family:var(--font-body);font-size:13px;color:var(--color-accent);margin:0 0 8px;font-weight:600;">Crowns &amp; fillings</p>
+          <p style="font-family:var(--font-body);font-size:14px;color:var(--color-neutral-600);margin:0;line-height:1.55;">Restore your bite without drawing attention.</p>
+        </div>
+      </div>
+      <a onclick="setCurrentPage('services'); return false;" href="#" style="color:var(--color-accent);font-family:var(--font-body);font-size:14px;font-weight:600;text-decoration:none;border-bottom:1px solid var(--color-accent);">See all treatments →</a>
+    </div>
+  </section>
+</main>
+</div>
+
+<div id="pageServices" style="display:none;">
+<main style="flex:1;display:flex;flex-direction:column;">
+  <section style="padding:72px 0 48px;border-bottom:1px solid var(--color-divider);">
+    <div style="max-width:1120px;margin:0 auto;padding:0 32px;">
+      <p style="font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-accent);font-weight:600;margin:0 0 8px;font-family:var(--font-body);">What we treat</p>
+      <h1 style="font-family:var(--font-heading);font-size:42px;font-weight:400;margin:0 0 16px;">Whole-family dentistry, done unhurried.</h1>
+      <p style="font-family:var(--font-body);font-size:17px;color:var(--color-neutral-600);margin:0;max-width:600px;">A full range of general and restorative dental care for the whole family.</p>
+    </div>
+  </section>
+
+  <section style="padding:80px 0;border-bottom:1px solid var(--color-divider);">
+    <div style="max-width:1120px;margin:0 auto;padding:0 32px;">
+      <div class="cards-grid-3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;">
+        <div style="border:1px solid var(--color-divider);border-radius:var(--radius-md);padding:28px;">
+          <p style="font-family:var(--font-body);font-size:13px;color:var(--color-accent);margin:0 0 12px;font-weight:600;">Cleanings &amp; preventive care</p>
+          <p style="font-family:var(--font-body);font-size:14px;color:var(--color-neutral-600);margin:0;line-height:1.55;">Routine cleanings, exams, and digital X-rays to catch small issues before they grow.</p>
+        </div>
+        <div style="border:1px solid var(--color-divider);border-radius:var(--radius-md);padding:28px;">
+          <p style="font-family:var(--font-body);font-size:13px;color:var(--color-accent);margin:0 0 12px;font-weight:600;">TMJ &amp; facial pain therapy</p>
+          <p style="font-family:var(--font-body);font-size:14px;color:var(--color-neutral-600);margin:0;line-height:1.55;">Jaw pain, frequent headaches, or a bite that feels off can point to TMJ issues. This office has years of experience diagnosing and treating it.</p>
+        </div>
+        <div style="border:1px solid var(--color-divider);border-radius:var(--radius-md);padding:28px;">
+          <p style="font-family:var(--font-body);font-size:13px;color:var(--color-accent);margin:0 0 12px;font-weight:600;">Fillings</p>
+          <p style="font-family:var(--font-body);font-size:14px;color:var(--color-neutral-600);margin:0;line-height:1.55;">Comfortable, tooth-colored fillings that restore your bite without drawing attention.</p>
+        </div>
+        <div style="border:1px solid var(--color-divider);border-radius:var(--radius-md);padding:28px;">
+          <p style="font-family:var(--font-body);font-size:13px;color:var(--color-accent);margin:0 0 12px;font-weight:600;">Crowns</p>
+          <p style="font-family:var(--font-body);font-size:14px;color:var(--color-neutral-600);margin:0;line-height:1.55;">Custom-fitted crowns to protect and rebuild teeth that need more than a filling.</p>
+        </div>
+        <div style="border:1px solid var(--color-divider);border-radius:var(--radius-md);padding:28px;">
+          <p style="font-family:var(--font-body);font-size:13px;color:var(--color-accent);margin:0 0 12px;font-weight:600;">Implant restorations</p>
+          <p style="font-family:var(--font-body);font-size:14px;color:var(--color-neutral-600);margin:0;line-height:1.55;">Implant-supported crowns built to look, feel, and function like natural teeth.</p>
+        </div>
+        <div style="border:1px solid var(--color-divider);border-radius:var(--radius-md);padding:28px;">
+          <p style="font-family:var(--font-body);font-size:13px;color:var(--color-accent);margin:0 0 12px;font-weight:600;">Emergency care</p>
+          <p style="font-family:var(--font-body);font-size:14px;color:var(--color-neutral-600);margin:0;line-height:1.55;">Prompt appointments when a tooth or a toothache won't wait.</p>
+        </div>
+        <div style="border:1px solid var(--color-divider);border-radius:var(--radius-md);padding:28px;">
+          <p style="font-family:var(--font-body);font-size:13px;color:var(--color-accent);margin:0 0 12px;font-weight:600;">Teeth whitening</p>
+          <p style="font-family:var(--font-body);font-size:14px;color:var(--color-neutral-600);margin:0;line-height:1.55;">Professional whitening treatments to brighten your smile and boost your confidence.</p>
+        </div>
+        <div style="border:1px solid var(--color-divider);border-radius:var(--radius-md);padding:28px;">
+          <p style="font-family:var(--font-body);font-size:13px;color:var(--color-accent);margin:0 0 12px;font-weight:600;">Cosmetic dentistry</p>
+          <p style="font-family:var(--font-body);font-size:14px;color:var(--color-neutral-600);margin:0;line-height:1.55;">Aesthetic treatments to enhance your smile and improve your overall appearance.</p>
+        </div>
+        <div style="border:1px solid var(--color-divider);border-radius:var(--radius-md);padding:28px;">
+          <p style="font-family:var(--font-body);font-size:13px;color:var(--color-accent);margin:0 0 12px;font-weight:600;">Removable prosthesis</p>
+          <p style="font-family:var(--font-body);font-size:14px;color:var(--color-neutral-600);margin:0;line-height:1.55;">Custom-fitted dentures and partial dentures designed for comfort and natural appearance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+</div>
+
+<div id="pageDoctors" style="display:none;">
+<main style="flex:1;display:flex;flex-direction:column;">
+  <section style="padding:72px 0 48px;border-bottom:1px solid var(--color-divider);">
+    <div style="max-width:1120px;margin:0 auto;padding:0 32px;">
+      <p style="font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-accent);font-weight:600;margin:0 0 8px;font-family:var(--font-body);">Meet the team</p>
+      <h1 style="font-family:var(--font-heading);font-size:42px;font-weight:400;margin:0 0 16px;">The doctors behind your care.</h1>
+      <p style="font-family:var(--font-body);font-size:17px;color:var(--color-neutral-600);margin:0;max-width:600px;">Two doctors, one standard of care. Here's a bit about each of us.</p>
+    </div>
+  </section>
+
+  <section style="padding:80px 0;">
+    <div style="max-width:1120px;margin:0 auto;padding:0 32px;">
+      <div class="doctor-row" style="display:grid;grid-template-columns:260px 1fr;gap:40px;align-items:flex-start;margin-bottom:80px;padding-bottom:80px;border-bottom:1px solid var(--color-divider);">
+        <figure class="plate doctor-photo" style="margin:0;width:260px;height:260px;overflow:hidden;background:var(--color-neutral-100);display:flex;align-items:center;justify-content:center;">
+          <img src="uploads/839F9775-6077-4A65-BD5F-67BA4F27BFDA_1_102_a.jpeg" alt="Dr. Reed Ragsdale" style="width:100%;height:100%;object-fit:contain;display:block;">
+        </figure>
+        <div>
+          <p style="font-family:var(--font-body);font-size:13px;color:var(--color-accent);margin:0 0 8px;font-weight:600;">Treating dentist</p>
+          <h3 style="font-family:var(--font-heading);font-size:28px;font-weight:400;margin:0 0 16px;">Dr. Reed Ragsdale, DDS</h3>
+          <p style="font-family:var(--font-body);font-size:15px;color:var(--color-neutral-600);margin:0 0 14px;line-height:1.6;">Dr. Ragsdale grew up in Southlake and graduated from Carroll High School before earning his bachelor's degree at Baylor University and his Doctor of Dental Surgery at the Texas A&amp;M University College of Dentistry.</p>
+          <p style="font-family:var(--font-body);font-size:15px;color:var(--color-neutral-600);margin:0 0 14px;line-height:1.6;">His wife, Addison, grew up in Coppell — a Coppell High School graduate and former Coppell Lariette. The two met at Pine Cove and have been married for three years. Around town, you might catch Dr. Ragsdale playing a round at Riverchase Golf Club or out for a run at Andy Brown Park. He and Addison are excited to raise a family in a place that's close to home for both of them.</p>
+          <p style="font-family:var(--font-body);font-size:15px;color:var(--color-neutral-600);margin:0;line-height:1.6;">Dr. Ragsdale is a member of the American Dental Association and Texas Dental Association. He provides the full range of services offered at this practice, and is looking forward to growing his knowledge in the study of TMJ and facial pain.</p>
+        </div>
+      </div>
+
+      <div class="doctor-row" style="display:grid;grid-template-columns:260px 1fr;gap:40px;align-items:flex-start;">
+        <figure class="plate doctor-photo" style="margin:0;width:260px;height:260px;overflow:hidden;background:var(--color-neutral-100);display:flex;align-items:center;justify-content:center;">
+          <img src="uploads/dr-peter-lecca-dds.jpg" alt="Dr. Peter Lecca" style="width:100%;height:100%;object-fit:contain;display:block;">
+        </figure>
+        <div>
+          <p style="font-family:var(--font-body);font-size:13px;color:var(--color-accent);margin:0 0 8px;font-weight:600;">Founding dentist</p>
+          <h3 style="font-family:var(--font-heading);font-size:28px;font-weight:400;margin:0 0 16px;">Dr. Peter Lecca</h3>
+          <p style="font-family:var(--font-body);font-size:15px;color:var(--color-neutral-600);margin:0 0 14px;line-height:1.6;">Dr. Lecca has been a Coppell resident and has practiced in Coppell since 1994. He is a graduate of Texas A&amp;M University and Baylor College of Dentistry. Dr. Lecca had the privilege of working for the Indian Health Service for four years after graduating from Baylor, stationed in Rapid City, South Dakota — an experience he found rewarding and life changing. He then returned to the Dallas area and opened his practice in Coppell.</p>
+          <p style="font-family:var(--font-body);font-size:15px;color:var(--color-neutral-600);margin:0 0 14px;line-height:1.6;">Dr. Lecca lives in the city of Coppell and has been a community volunteer with organizations including the Coppell Rotary Club, Coppell YMCA Board, Coppell Chamber of Commerce, and the Coppell Farmers Market.</p>
+          <p style="font-family:var(--font-body);font-size:15px;color:var(--color-neutral-600);margin:0;line-height:1.6;">Professionally, Dr. Lecca is involved in various dental organizations and study clubs, and has taught at Baylor College of Dentistry. Most recently, he has devoted his time to the study of temporomandibular joint dysfunction and other facial pain-related issues, collaborating with other healthcare professionals to provide the best options for his patients. Dr. Lecca is a member of the TDA, ADA, and Southwest Restorative Academy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+</div>
+
+<div id="reviewsSection" style="padding:80px 0;">
+  <div style="max-width:1120px;margin:0 auto;padding:0 32px;">
+    <p style="font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-accent);font-weight:600;margin:0 0 8px;font-family:var(--font-body);">In patients' words</p>
+    <h2 style="font-family:var(--font-heading);font-size:32px;font-weight:400;margin:0 0 48px;">What patients are saying.</h2>
+    <div class="cards-grid-3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;" id="reviews">
+      <div style="border:1px solid var(--color-divider);border-radius:var(--radius-md);padding:26px;">
+        <p style="font-family:var(--font-body);font-size:14px;color:var(--color-accent);margin:0 0 12px;letter-spacing:2px;">★★★★★</p>
+        <p style="font-family:var(--font-body);font-size:15px;color:var(--color-neutral-600);margin:0 0 14px;line-height:1.6;">An outstanding experience! Highly recommended! Staff, communication, process, conversation and treatment — 5 stars! Go here!</p>
+        <p style="font-family:var(--font-body);font-size:13px;color:var(--color-text);margin:0;font-weight:600;">— Kathy Anthony</p>
+      </div>
+      <div style="border:1px solid var(--color-divider);border-radius:var(--radius-md);padding:26px;">
+        <p style="font-family:var(--font-body);font-size:14px;color:var(--color-accent);margin:0 0 12px;letter-spacing:2px;">★★★★★</p>
+        <p style="font-family:var(--font-body);font-size:15px;color:var(--color-neutral-600);margin:0 0 14px;line-height:1.6;">Dr. Lecca went above and beyond! I am very nervous about the dentist and he and his staff made it very enjoyable.</p>
+        <p style="font-family:var(--font-body);font-size:13px;color:var(--color-text);margin:0;font-weight:600;">— Ana Muse</p>
+      </div>
+      <div style="border:1px solid var(--color-divider);border-radius:var(--radius-md);padding:26px;">
+        <p style="font-family:var(--font-body);font-size:14px;color:var(--color-accent);margin:0 0 12px;letter-spacing:2px;">★★★★★</p>
+        <p style="font-family:var(--font-body);font-size:15px;color:var(--color-neutral-600);margin:0 0 14px;line-height:1.6;">Dr. Lecca and the entire staff are wonderful, professional and caring. Highly recommend!</p>
+        <p style="font-family:var(--font-body);font-size:13px;color:var(--color-text);margin:0;font-weight:600;">— Paul K.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="contactSection" style="padding:80px 0;">
+  <div style="max-width:1120px;margin:0 auto;padding:0 32px;">
+    <div class="contact-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:56px;border-top:1px solid var(--color-divider);padding-top:60px;">
+      <div>
+        <p style="font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-accent);font-weight:600;margin:0 0 8px;font-family:var(--font-body);">Visit us</p>
+        <h2 style="font-family:var(--font-heading);font-size:30px;font-weight:400;margin:0 0 32px;">Our office</h2>
+        <div style="display:flex;gap:14px;margin-top:20px;font-size:15px;font-family:var(--font-body);color:var(--color-text);">
+          <div style="font-weight:600;color:var(--color-accent);">📍</div>
+          <div><p style="font-size:12px;text-transform:uppercase;letter-spacing:0.08em;color:var(--color-neutral-600);margin:0 0 2px;font-weight:600;">Address</p>275 S. Denton Tap Rd. #150, Coppell, TX 75019</div>
+        </div>
+        <div style="display:flex;gap:14px;margin-top:20px;font-size:15px;font-family:var(--font-body);color:var(--color-text);">
+          <div style="font-weight:600;color:var(--color-accent);">📞</div>
+          <div><p style="font-size:12px;text-transform:uppercase;letter-spacing:0.08em;color:var(--color-neutral-600);margin:0 0 2px;font-weight:600;">Phone</p>(972) 304-0968</div>
+        </div>
+        <div style="display:flex;gap:14px;margin-top:20px;font-size:15px;font-family:var(--font-body);color:var(--color-text);">
+          <div style="font-weight:600;color:var(--color-accent);">✉️</div>
+          <div><p style="font-size:12px;text-transform:uppercase;letter-spacing:0.08em;color:var(--color-neutral-600);margin:0 0 2px;font-weight:600;">Email</p>info@ragsdalefamilydentistry.com</div>
+        </div>
+        <div style="display:flex;gap:14px;margin-top:20px;font-size:15px;font-family:var(--font-body);color:var(--color-text);">
+          <div style="font-weight:600;color:var(--color-accent);">🕐</div>
+          <div><p style="font-size:12px;text-transform:uppercase;letter-spacing:0.08em;color:var(--color-neutral-600);margin:0 0 2px;font-weight:600;">Hours</p>Monday–Wednesday: 8:00 AM–5:00 PM<br>Thursday: by appointment request</div>
+        </div>
+      </div>
+      <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="return submitContactForm(event)" style="display:grid;gap:14px;font-family:var(--font-body);">
+        <input type="hidden" name="form-name" value="contact">
+        <p style="display:none;"><label>Don't fill this out if you're human: <input name="bot-field"></label></p>
+        <p style="font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-accent);font-weight:600;margin:0 0 8px;">Get in touch</p>
+        <h3 style="font-family:var(--font-heading);font-size:28px;font-weight:400;margin:0 0 20px;">Request an appointment</h3>
+        <div>
+          <label for="name" style="font-size:13px;color:var(--color-neutral-600);margin-bottom:4px;display:block;text-transform:uppercase;letter-spacing:0.08em;">Full name</label>
+          <input id="name" name="name" type="text" placeholder="Jane Doe" required style="font-family:var(--font-body);font-size:15px;padding:14px 16px;border-radius:4px;border:1px solid var(--color-divider);background:#fff;color:var(--color-text);width:100%;box-sizing:border-box;">
+        </div>
+        <div>
+          <label for="email" style="font-size:13px;color:var(--color-neutral-600);margin-bottom:4px;display:block;text-transform:uppercase;letter-spacing:0.08em;">Email</label>
+          <input id="email" name="email" type="email" placeholder="jane@email.com" required style="font-family:var(--font-body);font-size:15px;padding:14px 16px;border-radius:4px;border:1px solid var(--color-divider);background:#fff;color:var(--color-text);width:100%;box-sizing:border-box;">
+        </div>
+        <div>
+          <label for="phone" style="font-size:13px;color:var(--color-neutral-600);margin-bottom:4px;display:block;text-transform:uppercase;letter-spacing:0.08em;">Phone</label>
+          <input id="phone" name="phone" type="tel" placeholder="(214) 000-0000" style="font-family:var(--font-body);font-size:15px;padding:14px 16px;border-radius:4px;border:1px solid var(--color-divider);background:#fff;color:var(--color-text);width:100%;box-sizing:border-box;">
+        </div>
+        <div>
+          <label for="message" style="font-size:13px;color:var(--color-neutral-600);margin-bottom:4px;display:block;text-transform:uppercase;letter-spacing:0.08em;">How can we help?</label>
+          <textarea id="message" name="message" placeholder="New patient, existing patient, a specific concern..." style="font-family:var(--font-body);font-size:15px;padding:14px 16px;border-radius:4px;border:1px solid var(--color-divider);background:#fff;color:var(--color-text);width:100%;box-sizing:border-box;resize:vertical;min-height:110px;"></textarea>
+        </div>
+        <button type="submit" style="font-family:var(--font-body);padding:12px 20px;border:1px solid var(--color-accent);background:transparent;color:var(--color-accent);font-size:14px;border-radius:4px;cursor:pointer;justify-content:center;margin-top:8px;">Send request</button>
+        <p id="contactFormStatus" style="display:none;font-size:14px;margin:0;"></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<footer style="border-top:1px solid var(--color-divider);padding:40px 0;background:#f3f2f2;">
+  <div style="max-width:1120px;margin:0 auto;padding:0 32px;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--color-neutral-600);">
+    <div style="font-family:var(--font-body);">© 2026 Ragsdale Family Dentistry, Coppell, TX</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
