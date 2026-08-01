@@ -181,30 +181,15 @@
           <div><p class="info-label">Hours</p>Monday–Wednesday: 8:00 AM–5:00 PM<br>Thursday: by appointment request</div>
         </div>
       </div>
-      <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="return submitContactForm(event)">
-        <input type="hidden" name="form-name" value="contact">
-        <p style="display:none;"><label>Don't fill this out if you're human: <input name="bot-field"></label></p>
+      <div class="card" style="padding:40px;">
         <p class="eyebrow">Get in touch</p>
-        <h3 style="font-size:26px;margin-bottom:20px;">Request an appointment</h3>
-        <div class="field">
-          <label for="name">Full name</label>
-          <input id="name" name="name" type="text" placeholder="Jane Doe" required>
+        <h3 style="font-size:26px;margin-bottom:16px;">Ready to book?</h3>
+        <p class="lede" style="margin-bottom:28px;">Give us a call or send an email — that's the fastest way to reach us right now.</p>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <a href="tel:+19723040968" class="btn btn-primary">Call (972) 304-0968</a>
+          <a href="mailto:info@ragsdalefamilydentistry.com" class="btn btn-secondary">Email us</a>
         </div>
-        <div class="field">
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="jane@email.com" required>
-        </div>
-        <div class="field">
-          <label for="phone">Phone</label>
-          <input id="phone" name="phone" type="tel" placeholder="(214) 000-0000">
-        </div>
-        <div class="field">
-          <label for="message">How can we help?</label>
-          <textarea id="message" name="message" placeholder="New patient, existing patient, a specific concern..."></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary" style="margin-top:8px;">Send request</button>
-        <p id="contactFormStatus" style="display:none;font-size:14px;margin-top:14px;"></p>
-      </form>
+      </div>
     </div>
   </section>
 </main>
