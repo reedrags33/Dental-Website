@@ -23,7 +23,11 @@ structured data in `index.html`'s `<head>`.
 - Typography: warm serif (Cormorant Garamond) for headings — kept
   intentionally instead of switching to a literal Apple/sans-serif look,
   to preserve a "family practice" feel rather than "tech company."
-- Accent color: warm gold/amber (`--color-accent` in styles.css), not blue.
+- Brand colors come from the logo (`uploads/ragsdale-logo.png`): navy
+  `#1A2B4E` (`--color-accent`), blue `#476A93` (`--color-accent-2`), light
+  gray `#D5D9DF` (`--color-logo-gray`). Red (`--color-mark`) is kept as a
+  small accent (eyebrows, stars) with the owner's OK.
+- Header on every page: logo top-left, "Reed H. Ragsdale, DDS" under it.
 
 ## Copy direction (important — don't drift from this)
 SEO copy is written so **the patient is the hero of the story, not the
