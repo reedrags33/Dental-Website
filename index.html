@@ -25,7 +25,8 @@
   "telephone": "+19723040968",
   "faxNumber": "+19725323220",
   "openingHoursSpecification": [
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday"], "opens": "08:00", "closes": "17:00" }
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday"], "opens": "08:00", "closes": "17:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "08:00", "closes": "12:00" }
   ]
 }
 </script>
@@ -190,7 +191,14 @@
         </div>
         <div class="info-row">
           <div class="info-icon">🕐</div>
-          <div><p class="info-label">Hours</p>Monday–Wednesday: 8:00 AM–5:00 PM<br>Thursday: by appointment request</div>
+          <div><p class="info-label">Hours</p>
+            <dl class="hours">
+              <dt>Monday</dt><dd>8:00 AM – 5:00 PM</dd>
+              <dt>Tuesday</dt><dd>8:00 AM – 5:00 PM</dd>
+              <dt>Wednesday</dt><dd>8:00 AM – 5:00 PM</dd>
+              <dt>Thursday</dt><dd>8:00 AM – 12:00 PM</dd>
+            </dl>
+          </div>
         </div>
       </div>
       <div class="card" style="padding:40px;">

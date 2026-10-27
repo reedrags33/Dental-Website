@@ -177,6 +177,8 @@ a { color: inherit; }
 .info-row:first-of-type { margin-top: 28px; }
 .info-icon { color: var(--color-mark); font-size: 18px; }
 .info-label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.07em; color: var(--color-text-soft); margin: 0 0 3px; font-weight: 600; }
+.hours { display: grid; grid-template-columns: auto auto; column-gap: 20px; row-gap: 4px; margin: 0; }
+.hours dt, .hours dd { margin: 0; }
 
 .field { margin-bottom: 16px; }
 .field label { font-size: 13px; color: var(--color-text-soft); margin-bottom: 6px; display: block; font-weight: 500; }
